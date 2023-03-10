@@ -79,7 +79,7 @@
 
 
 
-// // Problem 11 Write a js program to find the sum of two numbers 
+// // Problem 11 Write a js program to find the sum of two numbers
 // // below num1 and num2 are parameter when we call function then we give argument
 // let twoSum = (num1, num2) => {
 //     return num1+num2
@@ -142,11 +142,24 @@
 // console.log(`The Power of ${powerOn} and of ${powerOf} `,Math.pow(powerOn,powerOf))
 
 
-// Date Metod 
+// Date Metods
 
+// Problem 21 Write a js program to get the current date and time.
+// to get the date we have to create Object of Date method 
+let crDate = new Date();
+console.log(crDate)
 
+// Problem 22 Write a js program to get the current year.
 
+console.log(crDate.getFullYear());
 
+// Problem 23 Write a js program to get the current month.
+//  Current Month is 2 as january is 0
+console.log(crDate.getMonth());
 
+// Problem 24 Write a js program to get the current day of the week.
+// days start from 1 and ends at 7
 
+console.log(crDate.getDay());
 
+//  Problem 27 Write a js program to get the time in milliseconds.
