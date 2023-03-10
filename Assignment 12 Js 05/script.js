@@ -142,7 +142,7 @@
 // console.log(`The Power of ${powerOn} and of ${powerOf} `,Math.pow(powerOn,powerOf))
 
 
-// Date Metods 
+// Date Metod 
 
 
 
