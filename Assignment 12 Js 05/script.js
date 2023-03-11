@@ -142,24 +142,140 @@
 // console.log(`The Power of ${powerOn} and of ${powerOf} `,Math.pow(powerOn,powerOf))
 
 
-// Date Metods
+// // Date Metods
 
-// Problem 21 Write a js program to get the current date and time.
-// to get the date we have to create Object of Date method 
-let crDate = new Date();
-console.log(crDate)
+// // Problem 21 Write a js program to get the current date and time.
+// // to get the date we have to create Object of Date method
+// let crDate = new Date();
+// alert(crDate);
 
-// Problem 22 Write a js program to get the current year.
+// // Problem 22 Write a js program to get the current year.
 
-console.log(crDate.getFullYear());
+// console.log(crDate.getUTCFullYear());
 
-// Problem 23 Write a js program to get the current month.
-//  Current Month is 2 as january is 0
-console.log(crDate.getMonth());
+// // Problem 23 Write a js program to get the current month.
+// //  Current Month is 2 as january is 0
+// console.log(crDate.getMonth());
 
-// Problem 24 Write a js program to get the current day of the week.
-// days start from 1 and ends at 7
+// // Problem 24 Write a js program to get the current day of the week.
+// // days start from 1 and ends at 7
 
-console.log(crDate.getDay());
+// console.log(crDate.getDay());
 
-//  Problem 27 Write a js program to get the time in milliseconds.
+// Problem 25 Write a js program to add a specific number of days to a date.
+// let yourCurrentDate = Number.parseInt(prompt("Enter Current Day:"));
+// let howMuchAdd = Number.parseInt(prompt(`Your Current Days is ${yourCurrentDate} How much do you want to add`));
+// let yourDateAfterAdd = yourCurrentDate + howMuchAdd;
+// //created addDay an object with new and date method .
+// const addDay = new Date(2023, 2, yourDateAfterAdd, 21, 34, 12);
+// alert(addDay);
+
+// // Problem 26 Write a js program to subtract a specific number of days from a date.
+
+// let yourCurrDate = Number.parseInt(prompt("Enter Current Day:"));
+// let howMuchSub = Number.parseInt(prompt(`Your Current Days is ${yourCurrDate} How much do you want to Subtraction`));
+// let yourDateAfterSub = yourCurrDate - howMuchSub;
+// const subDay = new Date(2023, 2, yourDateAfterSub, 21, 34, 12);
+// alert(subDay);
+
+// // Problem 27 Write a js program to get the time in milliseconds.
+
+// console.log(crDate.getMilliseconds());
+
+// // Problem 28 Write a js program to get the hours, minutes, and seconds from a date object
+
+// console.log(crDate.toTimeString());
+
+
+// // Problem 29 Write a js program to create a new date object with a specific year, month, and day.
+// let spcYear=prompt("Enter Specific Year Format eg 2022")
+// let SpcMonth=prompt("Enter Specific Month Format 0-11")
+// let SpcDate=prompt("Enter Specific date Format 0-31")
+// let specificDate = new Date(spcYear, SpcMonth, SpcDate,12,3,4)
+// alert(specificDate);
+
+// // Problem 30 Write a js program to compare two dates.
+// if (specificDate < crDate) {
+//     alert("Your Enter Date is smaller");
+// }
+// else {
+//     alert("Your Enter Date Is Greater");
+// }
+
+
+// // Math Methods
+// // Problem 31 Write a js program to find the absolute value of a number.
+// let negNum = Number.parseInt(prompt("Enter Negative Number"));
+// let posNum=Math.abs(negNum)
+// console.log(`The Negative Number is ${negNum} and the absolute value is ${posNum}`);
+
+// // Problem 32 Write a js program to find the highest value in a list of numbers.
+// let maxNuumb = Math.max(32, 213, 43324, 123, 4321, 2321, 324, 213);
+// console.log("The Maximum Number is",maxNuumb);
+
+// //  Problem 33 Write a js program to find the lowest value in a list of numbers.
+// let minNuumb= Math.min(32, 213, 43324, 123, 4321, 2321, 324, 213)
+// console.log("The Lowest Number is",minNuumb);
+
+// // // Problem 34 Write a js program to round a number up to the nearest integer.
+// let takNumb1 = Number.parseFloat(prompt("Enter the Number for round up"));
+// let roundNumb1 = Math.ceil(takNumb1);
+// console.log(`The Number Before Round up Was ${takNumb1} and now is ${roundNumb1}`);
+
+// // Problem 35 Write a js program to round a number down to the nearest integer.
+// let takNumb2 = Number.parseFloat(prompt("Enter the Number for round down"));
+// let roundNumb2 = Math.floor(takNumb2);
+// console.log(`The Number Before Round down Was ${takNumb2} and now is ${roundNumb2}`);
+
+// // Problem 36 Write a js program to calculate the exponential value of a number.
+// let whosePow = Number.parseInt(prompt("Enter the Number whose power"));
+// let whatPow = Number.parseInt(prompt("Enter the Number whose power"));
+// let takePow = Math.pow(whosePow, whatPow);
+// console.log(`The Number is ${whosePow} and power is ${whatPow}`,takePow);
+
+// // Problem 37 Write a js program to calculate the natural logarithm of a number.
+// let takeNatLg = Number.parseInt(prompt("Enter the Number for log"));
+// let logIs=Math.log(takeNatLg)
+// console.log(`The Number for Log was ${takeNatLg} and the log is ${logIs}`);
+
+
+// // Problem 38 Write a js program to calculate the sine of an angle in radians.
+// let takeSin= Number.parseInt(prompt("Enter the Number for Sin"));
+// let sinIs = Math.sin(takeSin);
+// console.log(`The sine was of ${takeSin} and is ${sinIs}`);
+
+// // Problem 39 Write a js program to calculate the cosine of an angle in radians.
+
+// let takeCos= Number.parseInt(prompt("Enter the Number for Cos"));
+// let cosIs = Math.cos(takeCos);
+// console.log(`The sine was of ${takeCos} and is ${cosIs}`);
+
+// // Problem 40 Write a js program to calculate the square root of a number.
+
+// let askForSqrt = Number.parseInt(prompt("Enter Number For SquareRoot"));
+// let sqrtIs = Math.sqrt(askForSqrt);
+// console.log(`The SquareRoot of ${askForSqrt} is ${sqrtIs}`);
+
+
+
+
+// For loop
+
+
+
+// Problem 41 Write a program that uses a for loop to print the numbers from 1 to 10.
+for (let i = 1; i <= 10; i++){
+    console.log("The Value of i is", i);
+}
+
+//  Problem 42 Write a program that uses a for loop to print the elements of an array.
+
+const arrOfEven = [2, 4, 6, 8, 10];
+for (let i in arrOfEven) {
+    console.log(`The Value is ${arrOfEven[i]} and the index is ${i}`);
+}
+
+//  Problem 43 Write a program that uses a for loop to calculate the factorial of a number.
+
+
+
