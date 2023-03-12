@@ -162,7 +162,7 @@
 
 // console.log(crDate.getDay());
 
-// Problem 25 Write a js program to add a specific number of days to a date.
+// // Problem 25 Write a js program to add a specific number of days to a date.
 // let yourCurrentDate = Number.parseInt(prompt("Enter Current Day:"));
 // let howMuchAdd = Number.parseInt(prompt(`Your Current Days is ${yourCurrentDate} How much do you want to add`));
 // let yourDateAfterAdd = yourCurrentDate + howMuchAdd;
@@ -259,23 +259,123 @@
 
 
 
-// For loop
+// // For loop
 
 
 
-// Problem 41 Write a program that uses a for loop to print the numbers from 1 to 10.
-for (let i = 1; i <= 10; i++){
-    console.log("The Value of i is", i);
-}
+// // Problem 41 Write a program that uses a for loop to print the numbers from 1 to 10.
+// for (let i = 1; i <= 10; i++){
+//     console.log("The Value of i is", i);
+// }
 
-//  Problem 42 Write a program that uses a for loop to print the elements of an array.
+// //  Problem 42 Write a program that uses a for loop to print the elements of an array.
 
-const arrOfEven = [2, 4, 6, 8, 10];
-for (let i in arrOfEven) {
-    console.log(`The Value is ${arrOfEven[i]} and the index is ${i}`);
-}
+// const arrOfEven = [2, 4, 6, 8, 10];
+// for (let i in arrOfEven) {
+//     console.log(`The Value is ${arrOfEven[i]} and the index is ${i}`);
+// }
 
-//  Problem 43 Write a program that uses a for loop to calculate the factorial of a number.
+// //  Problem 43 Write a program that uses a for loop to calculate the factorial of a number.
+
+// let tempNumb;
+// let factNumb = Number.parseInt(prompt("Enter a  Number"));
+// tempNumb = factNumb;
+// for (let i = factNumb; i >= 1; i--){
+//     factNumb = factNumb * i;
+
+//     if (i == 1) {
+//         console.log(`The Factorial of ${tempNumb} is`,factNumb);
+//     }
+    
+// }
+
+// // Problem 44 Write a program that uses a for loop to generate a multiplication table for a given number.
+// let tableOf = Number.parseInt(prompt("Enter a Number For Table"))
+// for (let i = 1; i <= 10; i++){
+//     let ansTab = tableOf * i;
+//     console.log(`${tableOf} * ${i}= ${ansTab}`);
+// }
+
+
+// // Problem 45 Write a program that uses a for loop to find the sum of all even numbers from 1 to 100.
+// let SumEven = 0;
+// for (let i = 0; i <= 100; i = i + 2){
+//     SumEven = SumEven + i;
+// }
+// console.log(`The Sum of First 100 Even Number is`, SumEven);
 
 
 
+// // WHILE LOOP
+
+// // Problem 46 Write a program that asks the user to enter a number and then prints out all the odd numbers up to that number.
+// let askOdd = Number.parseInt(prompt("Enter a Number Till you want to print odd number"));
+// let i = 1;
+// while (i <= askOdd) {
+//       console.log(i)
+//       i=i+2
+// }
+
+// // Problem 47 Write a program that asks the user to enter a number and then prints out the multiplication table for that number, up to 10.
+
+// let askForTable = Number.parseInt(prompt("Enter a Number for table"));
+// let w = 1;
+// while (w <= 10) {
+//     let tableStore = askForTable * w;
+//     console.log(`${askForTable} * ${w}= ${tableStore}`);
+//     w++;
+// }
+ 
+// // Problem 48 Write a program that generates a random number between 1 and 100 and asks the user to guess it. The program should keep asking the user for guesses until they get the number.
+
+// let guessForRandomNumber;
+
+// let generateRandomNumber = Math.floor(Math.random() * 101);
+
+// while (generateRandomNumber != guessForRandomNumber) {
+//     guessForRandomNumber = Number.parseInt(prompt("Enter a Number Between 1-100 and Guess"));
+
+//     if (guessForRandomNumber == generateRandomNumber) {
+//         alert("Hurrah You are right")
+//     }
+
+//     else if (guessForRandomNumber < generateRandomNumber) {
+//         alert("The Number is Greater Than What are you guessing")
+//     }
+    
+//     else {
+//         alert("The Number is Lesser Than What are you guessing")
+        
+//     }
+
+// }
+
+
+// // Problem 49 Write a program that asks the user to enter a word and then prints out the word in reverse order.
+
+// let askWord = prompt("Enter Word For Reverse")
+// let wordSplit = askWord.split("");
+// let splitReverse = wordSplit.reverse();
+// let reverseJoin = splitReverse.join("");
+// console.log(reverseJoin);
+
+
+// // Problem 50 Write a program that asks the user to enter a series of numbers and then finds the sum and average of those numbers.
+
+// let askForAvg = Number.parseInt(prompt("Enter a Number"));
+// let theSum = 0;
+// let p = askForAvg;
+// while (p != 0) {
+//     theSum = theSum + p;
+//     p--;
+// }
+// let theAverage = theSum / askForAvg;
+
+// console.log(`The Sum from ${askForAvg} till 1 is `,theSum);
+// console.log(`The Average of ${askForAvg} is `,theAverage);
+
+
+
+// Do While Loop
+
+// Pronlem 51 Write a program that asks the user to enter a password. Keep asking the user to enter a password until they enter the correct password.
