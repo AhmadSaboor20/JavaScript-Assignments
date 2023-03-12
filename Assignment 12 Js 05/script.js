@@ -376,6 +376,253 @@
 
 
 
-// Do While Loop
+// // Do While Loop
 
-// Pronlem 51 Write a program that asks the user to enter a password. Keep asking the user to enter a password until they enter the correct password.
+// // Pronlem 51 Write a program that asks the user to enter a password. Keep asking the user to enter a password until they enter the correct password.
+// let createPass = prompt("Create Password");
+// let askForPass;
+
+// do {
+//      askForPass = prompt("Enter Password");
+//     if (askForPass != createPass) {
+//         alert("Wrong Password")
+//      askForPass = prompt("Re-Enter Password");
+//     }
+//     alert("Login granted")
+// } while (askForPass!=createPass)
+
+// //Problem 52 Write a program that asks the user to enter a number and then prints out all the numbers from that number down to 1.
+
+// let dasNumb = Number.parseInt(prompt("Enter a Number to make a reverse order"));
+// do {
+//     console.log(dasNumb);
+//     dasNumb--;
+    
+// } while (dasNumb != 0)
+
+// // Problem 53 Write a program that generates a random number between 1 and 100 and asks the user to guess it. The program should keep asking the user for guesses until they get the number. At the end of the loop, the program should ask the user if they want to play again.
+
+// let randyNumby = Math.floor(Math.random() * 101);
+// let guessyNumb;
+// do {
+
+//     guessyNumb = Number.parseInt(prompt("Guess The Number Between 1-100"));
+//     if (randyNumby < guessyNumb) {
+//     alert("Less")
+//     }
+//     else if(randyNumby>guessyNumb)
+//     {
+//         alert("greater")
+//     }
+//     else {
+//         alert(`hurrah you have gussed right  ${guessyNumb} `)
+//         let a = confirm("Do you want to play again")
+//     }
+    
+    
+// } while (randyNumby != guessyNumb)
+
+
+// // Problem 54 Write a program that asks the user to enter a series of numbers and then finds the largest number. The program should keep asking the user for numbers until they enter a negative number.
+
+// let largestNumber = 0;
+// let number;
+
+// do {
+//     let userInput = prompt("Enter a number:");
+//     tempNumber = userInput;
+// if (number >= 0) {
+//     largestNumber = tempNumber;
+//   }
+// } while (tempNumber >= 0);
+// alert("The largest number is: " + largestNumber);
+
+
+
+
+// // Problem 55 Write a program that asks the user to enter a series of words and then prints out the words in reverse order. The program should keep asking the user for words until they enter the word "stop".
+
+let takeAstring;
+do {
+    
+    takeAstring = prompt("Enter a String");
+    if (takeAstring != "stop") {
+    let takeAstringSplit = takeAstring.split("");
+    let splitReverse = takeAstringSplit.reverse();
+    let reverseJoin = splitReverse.join("");
+    alert(reverseJoin)
+}
+
+} while (takeAstring != "stop")
+
+
+
+
+
+
+
+
+// // Switch Statement
+// // Problem 56 Write a js program to print day of week name using switch case.
+// let askNumberForDate=Number.parseInt(prompt("Enter From 1-7 to Print the Day "))
+// switch (askNumberForDate) {
+//     case 1:
+//         alert("Monday")
+//         break;
+//     case 2:
+//         alert("Tuesday")
+//         break;
+//     case 3:
+//         alert("Wednesday")
+//         break;
+//     case 4:
+//         alert("Thursday")
+//         break;
+//     case 5:
+//         alert("Friday")
+//         break;
+//     case 6:
+//         alert("Saturday")
+//         break;
+//     case 7:
+//         alert("Sunday")
+//         break;
+
+//     default:
+//         alert("Invalid")
+//         break;
+// }
+
+// // Problem 57 Write a js program print total number of days in a month using switch case.
+// let askTheMonth = prompt("Enter  Month ");
+// askTheMonth=askTheMonth.toLowerCase();
+// switch (askTheMonth) {
+//     case "january":
+//         alert("31 DAYS")
+//         break;
+    
+//     case "feburary":
+//         alert("28 Days In Leap Year 29 Days")
+//         break;
+//     case "march":
+//         alert("31 DAYS")
+//         break;
+//     case "april":
+//         alert("30 DAYS")
+//         break;
+//     case "may":
+//         alert("31 DAYS")
+//         break;
+//     case "june":
+//         alert("30 DAYS")
+//         break;
+//     case "july":
+//         alert("31 DAYS")
+//         break;
+//     case "august":
+//         alert("31 DAYS")
+//         break;
+//     case "september":
+//         alert("30 DAYS")
+//         break;
+//     case "october":
+//         alert("31 DAYS")
+//         break;
+//     case "november":
+//         alert("30 DAYS")
+//         break;
+//     case "december":
+//         alert("31 DAYS")
+//         break;
+//     default:
+//         alert('Invalid');
+//         break;
+// }
+
+
+// // Problem 58 Write a js program to check whether an alphabet is vowel or consonant using switch case.
+
+// let askTheVowel = prompt("Enter an Alphabet");
+// askTheVowel = askTheVowel.toLowerCase();
+// switch (askTheVowel) {
+//     case "a":
+//         alert(`Hurrah its a Vowel`);
+        
+//         break;
+//         case "e":
+//         alert(`Hurrah its a Vowel`);
+            
+//             break;
+//             case "i":
+//         alert(`Hurrah its a Vowel`);
+        
+//         break;
+//         case "o":
+//         alert(`Hurrah its a Vowel`);
+        
+//         break;
+//         case "u":
+//             alert(`Hurrah its a Vowel`);
+        
+//             break;
+
+
+//     default:
+//         alert("it is a consonent")
+//         break;
+// }
+
+
+// // Problem 59 Write a js program to find maximum between two numbers using switch case.
+// let maxNum1 = Number.parseInt(prompt("Enter a Number"));
+// let maxNum2 = Number.parseInt(prompt("Enter a Number"));
+
+// switch (true) {
+//     case (maxNum1>maxNum2):
+//         alert(`${maxNum1} is greater`)
+//         break;
+//        case (maxNum2>maxNum1):
+//         alert(`${maxNum2} is greater`)
+//         break;
+//        case (maxNum2==maxNum1):
+//         alert(`Equal`)
+//         break;
+
+//     default:
+//         alert("Invalid")
+//         break;
+// }
+
+
+// // Problem 60 Write a js program to check whether a number is even or odd using switch case.
+
+// let forEvenOrOdd = Number.parseInt(prompt("Enter Check Number For Even Or Odd"));
+// switch (true) {
+//     case (forEvenOrOdd % 2 == 0):
+//         alert(`${forEvenOrOdd} is even`)
+//         break;
+//     case (forEvenOrOdd % 2 != 0):
+//         alert(`${forEvenOrOdd} is odd`)
+//         break;
+
+//     default:
+//         alert(`${forEvenOrOdd} seems to be null or undefined`)
+//         break;
+// }
+
+// // Problem 61 Write a js program to check whether a number is positive, negative or zero using switch case.
+// let chkPosOrNeg = Number.parseInt(prompt("Enter Check Number For + Or - Null"));
+// switch (true) {
+//     case (chkPosOrNeg < 0):
+//         alert(`${chkPosOrNeg} is negative`)
+//         break;
+//     case (chkPosOrNeg > 0):
+//         alert(`${chkPosOrNeg} is positive`)
+//         break;
+//     case (chkPosOrNeg == 0):
+//         alert(`${chkPosOrNeg} is Zero`)
+//         break;
+//     default:
+//         alert("Invalid")
+//         break;
+// }
